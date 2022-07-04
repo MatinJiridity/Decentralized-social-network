@@ -1,3 +1,3 @@
 # Decentralized-social-network
 
-Decentralized social network based on the blockchain ..
+Social Network based on the blockchain ..
