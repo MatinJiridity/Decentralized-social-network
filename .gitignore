@@ -1,0 +1,17 @@
+package-lock.json
+node_modules
+package.json
+images
+fonts
+emoji
+strip-skins
+bootstrap.min.js
+ipfs-mini.js
+jquery.msgBox.js
+truffle-contract.js
+web3new.min.js
+responsive.css
+main.min.css
+style.css
+color.css
+custom.js

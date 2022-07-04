@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>Decentralise Winku Social Network Toolkit</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/loading.css">
+	<link rel="stylesheet" href="css/msgBoxLight.css">
+
+
+	<style>
+		h2, h5	 {
+			font: size 18px;
+			color: 	rgba(58, 88, 240, 0.807);
+			text-align: center;
+			
+		}
+
+		b {
+			color: hsla(245, 92%, 38%, 0.353);
+		}
+		span {
+			color:  rgb(16, 8, 105);
+		}
+		button {
+			background-color: rgb(75, 0, 75);
+			border: hidden;
+			color: beige;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="theme-layout">
+
+
+		<div class="topbar stick" style="background-color:">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+							<div class="logo">
+								<a title="" href="/" target="blank"><img
+										src="images/5a7593fc64538c292dec1bbf.png" alt="" width="63"></a>
+							</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="top-area">
+						<h2>Decentralized Social Media</h2>
+					</div>
+				</div>
+
+
+
+		</div> 
+
+
+		<section >
+			<div class="gap gray-bg ">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+	
+							<div class="row" id="page-contents">
+
+								<div class="col-lg-3">
+									<aside class="sidebar static">
+										<div class="widget">
+											<h4 style="color: rgb(72, 72, 253)	;" class="widget-title">Shortcuts</h4>
+											<ul class="naves" >
+
+
+												
+
+
+											</ul>
+										</div><!-- Shortcuts -->
+										<div class="widget">
+											<h4 style="color: rgb(72, 72, 253);" class="widget-title">Recent Activity</h4>
+											<ul class="activitiez">
+												<li>
+													<div class="activity-meta">
+														<i id="time-1"></i>
+														<span id="activity-1"></span>
+													</div>
+												</li>
+												<li>
+													<div class="activity-meta">
+														<i id="time-2"></i>
+														<span id="activity-2"></span>
+													</div>
+												</li>
+												<li>
+													<div class="activity-meta">
+														<i id="time-3"></i>
+														<span id="activity-3"></span>
+													</div>
+												</li>
+											</ul>
+										</div><!-- recent activites -->
+
+									</aside>
+								</div><!-- sidebar -->
+
+
+								<div style="color: blue; background-color: 	#dadddf8f; border-top: 1px;" class="col-lg-6">
+
+									<!------------------------------------- post bala shoru -------------------------------------------------------->
+									<div style="border-top: 1px;background-color: #d2d4d68f;" class="central-meta">
+										<div class="new-postbox">
+											<div id="address" style="color: rgb(72, 72, 253)">
+												CurrentAccount : <span id="Address"></span>
+											</div>
+
+												<div class="newpst-input">
+													<textarea rows="2" placeholder="write something.."
+														id="descripetion"></textarea>
+													<div>
+														<div class="attachments">
+															<ul>
+
+																<li>
+																	<i class="fa fa-image"></i>
+																	<label class="fileContainer"  >
+																		<input  type="file" id="fileimg" onchange="previewFile()">
+																	</label>
+																</li>
+
+																<li>
+																	<button style="background-color:rgb(72, 72, 253); border-color: black;" id="newpost" >Post</button>
+																</li>
+
+															</ul>
+														</div>
+														<!-- <br> -->
+														<div id="showimgnft">
+
+														</div>
+													</div>
+												</div>	
+											</div>	
+										</div>
+									<div id="showPosts">
+											
+									</div>
+								</div><!-- add post new box -->
+
+
+							
+								<div class="col-lg-3">
+									<aside class="sidebar static">
+										<div class="widget">
+											<h4 style="color: rgb(72, 72, 253);" class="widget-title">Your page</h4>	
+											<div class="your-page">
+												<div id="address" style="color: rgb(72, 72, 253)">
+													address : <span id="shortAddress"></span><br>
+													posts :  <span id="postsAmount"></span><br>
+													likes :  <span id="likesAmount"></span><br>
+													dislikes :<span  id="dislikesAmount"></span><br>
+													comments : <span id="commentsAmount"></span><br>
+													tip : <span id="tipAmount"></span>
+												</div>
+											</div>
+										</div><!-- page like widget -->
+										<div class="widget">
+											<div class="banner medium-opacity bluesh">
+												<div class="bg-image" style="background-image: url(images/resources/baner-widgetbg.jpg)"></div>
+												<div class="baner-top">
+													<span><img alt="" src="images/book-icon.png"></span>
+													<i class="fa fa-ellipsis-h"></i>
+												</div>
+												<div class="banermeta">
+														<h4>click to add Shortcut(only owner):</h6>
+													<button class="submit-btns" id="myButton">admin</button>
+												</div>
+											</div>											
+										</div>
+
+									</aside>
+								</div><!-- sidebar -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- for loading -->
+
+		
+		<footer >
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-12 col-xl-4" >
+						<div class="footsec">
+							<div class="footlogocntSec">
+								<h5 class="textgraycolor mt-3 mb-4"><span class="textbluecolor">Email :</span>
+									matinjiri@gmail.com</h5>
+								<h5 class="textgraycolor mt-3 mb-4"><span class="textbluecolor">my GitHub :</span>
+									<a href="https://github.com/MatinJiridity">MatinJiridity</a>
+								</h5>
+	
+							</div>
+
+						</div>
+					</div>
+	
+					<div class="col-lg-12 col-xl-8 d-none d-md-flex justify-content-between">
+						<div class="footlinks">
+							<h2>My account</h2>
+							<ul>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Favorites</a></li>
+								<li><a href="#">My collection</a></li>
+								<li><a href="#">Settings</a></li>
+							</ul>
+						</div>
+	
+						<div class="footlinks">
+							<h2>Discover</h2>
+							<ul>
+								<li><a href="#">Art</a></li>
+								<li><a href="#">Phorography</a></li>
+								<li><a href="#">Domain Names</a></li>
+								<li><a href="#">Memes</a></li>
+								<li><a href="#">Virtual Worlds</a></li>
+								<li><a href="#">Trading Cards</a></li>
+							</ul>
+						</div>
+	
+						<div class="footlinks">
+							<h2>Inform Center</h2>
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="blogstyle1.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="newsletter.html">Newsletter</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+	<div id="overlay">
+		<div class="cv-spinner">
+			<span class="spinner"></span>
+		</div>
+	</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3new.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+<script src="js/ipfs-mini.js"></script>
+<script src="js/jquery.msgBox.js"></script>
+<script src="js/app.js"></script>
+
+</html>
+
+
+
